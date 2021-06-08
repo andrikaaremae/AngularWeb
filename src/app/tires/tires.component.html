@@ -1,0 +1,10 @@
+<h2>{{ tires.length }} Tires</h2>
+<ul>
+    <li *ngFor="let tire of tires">
+        {{tire}}
+    </li>
+</ul>
+<input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+<div (click)="onDivClicked()">
+    <button class="btn btn-primary" [class.active]="isActive" [style.backgroundColor]="isActive ? 'blue' : 'black'" (click)="onSave($event)">Save</button>
+</div>
